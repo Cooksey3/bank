@@ -34,4 +34,11 @@ public class BankAccountTest {
 		assertEquals("Checking", accountType);
 	}
 	
+	@Test
+	public void shouldGenerateAnotherAccountType() {
+		BankAccount underTest = new BankAccount("", "Savings", 0.0);
+		String accountType = underTest.getAccountType();
+		assertEquals("Savings", accountType);
+	}
+	
 }
