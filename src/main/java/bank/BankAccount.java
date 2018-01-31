@@ -6,4 +6,8 @@ public class BankAccount {
 
 	}
 
+	public String getAccountNumber() {
+		return "1111";
+	}
+
 }
