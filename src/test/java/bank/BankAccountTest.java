@@ -48,4 +48,10 @@ public class BankAccountTest {
 		assertEquals(10.0, balance, .001);
 	}
 	
+	@Test
+	public void shouldBeAbleToGenerateMultipleBalances() {
+		BankAccount underTest = new BankAccount("", "Savings", 20.0);
+		double balance = underTest.getBalance();
+		assertEquals(20.0, balance, .001);
+	}
 }
