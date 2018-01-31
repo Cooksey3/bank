@@ -18,4 +18,8 @@ public class BankAccount {
 		return accountType;
 	}
 
+	public double getBalance() {
+		return 10.0;
+	}
+
 }

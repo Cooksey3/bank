@@ -41,4 +41,11 @@ public class BankAccountTest {
 		assertEquals("Savings", accountType);
 	}
 	
+	@Test
+	public void shouldGenerateBalance() {
+		BankAccount underTest = new BankAccount("", "Savings", 10.0);
+		double balance = underTest.getBalance();
+		assertEquals(10.0, balance, .001);
+	}
+	
 }
