@@ -12,4 +12,8 @@ public class BankAccount {
 		return bankAccountNumber;
 	}
 
+	public String getAccountType() {
+		return "Checking";
+	}
+
 }

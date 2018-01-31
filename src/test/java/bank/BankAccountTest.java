@@ -26,4 +26,12 @@ public class BankAccountTest {
 		String accountNumber = underTest.getAccountNumber();
 		assertEquals("2222", accountNumber);
 	}
+	
+	@Test
+	public void shouldGenerateAccountType() {
+		BankAccount underTest = new BankAccount("", "Checking", 0.0);
+		String accountType = underTest.getAccountType();
+		assertEquals("Checking", accountType);
+	}
+	
 }
