@@ -2,12 +2,14 @@ package bank;
 
 public class BankAccount {
 
-	public BankAccount(String accountNum, String accountType, double balance) {
-
+	private String bankAccountNumber;
+	
+	public BankAccount(String bankAccountNumber, String accountType, double balance) {
+		this.bankAccountNumber = bankAccountNumber;
 	}
 
 	public String getAccountNumber() {
-		return "1111";
+		return bankAccountNumber;
 	}
 
 }

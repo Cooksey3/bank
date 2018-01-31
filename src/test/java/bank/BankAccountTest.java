@@ -20,4 +20,10 @@ public class BankAccountTest {
 		assertEquals("1111", accountNumber);
 	}
 	
+	@Test
+	public void shouldGenerateSecondAccountNumber() {
+		BankAccount underTest = new BankAccount("2222", "", 0.0);
+		String accountNumber = underTest.getAccountNumber();
+		assertEquals("2222", accountNumber);
+	}
 }
