@@ -5,7 +5,7 @@ public class BankAccount {
 	private String bankAccountNumber;
 	private String accountType;
 	private double balance;
-	
+
 	public BankAccount(String bankAccountNumber, String accountType, double balance) {
 		this.bankAccountNumber = bankAccountNumber;
 		this.accountType = accountType;
@@ -23,5 +23,4 @@ public class BankAccount {
 	public double getBalance() {
 		return balance;
 	}
-
 }
