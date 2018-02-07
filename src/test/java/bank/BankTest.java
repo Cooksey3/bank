@@ -46,21 +46,20 @@ public class BankTest {
 		int numberOfAccounts = underTest.numberOfAccounts();
 		assertEquals(2, numberOfAccounts);
 	}
-	
+
 	@Test
 	public void shouldRemoveAccount() {
 		String newAccountNumber = "12343";
 		BankAccount newAccount2 = new BankAccount(newAccountNumber, ACCOUNT_TYPE, new BigDecimal("0.0"));
 		underTest = new Bank();
 		underTest.addAccount(newAccount2);
-		underTest.addAccount(account);		
+		underTest.addAccount(account);
 		int numberOfAccountsBefore = underTest.numberOfAccounts();
 		underTest.removeAccount(newAccount2);
 		int numberOfAccountsAfter = underTest.numberOfAccounts();
 		assertEquals(numberOfAccountsBefore - numberOfAccountsAfter, 1);
-		
+
 	}
-	
 
 	@Test
 	public void shouldGetAccountNumber() {

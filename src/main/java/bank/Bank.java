@@ -12,9 +12,13 @@ public class Bank {
 	public Collection<BankAccount> account() {
 		return accounts.values();
 	}
-	
+
 	public void addAccount(BankAccount account) {
 		accounts.put(account.getAccountNumber(), account);
+	}
+
+	public void removeAccount(BankAccount account) {
+		accounts.remove(account.getAccountNumber(), account);
 	}
 
 	public int numberOfAccounts() {
@@ -39,9 +43,4 @@ public class Bank {
 		account.withdraw(amount);
 
 	}
-
-	public void removeAccount(BankAccount account) {
-		accounts.remove(account.getAccountNumber(), account);
-	}
-
 }
