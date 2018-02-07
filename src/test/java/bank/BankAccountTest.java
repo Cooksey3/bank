@@ -63,14 +63,14 @@ public class BankAccountTest {
 	@Test
 	public void shouldWithdrawMoney() {
 		BankAccount underTest = new BankAccount("1111", "Savings", new BigDecimal("100.00"));
-		underTest.withdraw("10.00");
+		underTest.withdraw(new BigDecimal("10.00"));
 		assertEquals(underTest.getBalance(), new BigDecimal("90.00"));
 	}
 	
 	@Test
 	public void shouldDepositMoney() {
 		BankAccount underTest = new BankAccount("1111", "Savings", new BigDecimal("100.00"));
-		underTest.deposit("10.00");
+		underTest.deposit(new BigDecimal("10.00"));
 		assertEquals(underTest.getBalance(), new BigDecimal("110.00"));
 	}
 	

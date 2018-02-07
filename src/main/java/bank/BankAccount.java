@@ -35,13 +35,12 @@ public class BankAccount {
 		return "Account Number: " + number;
 	}
 
-	public void withdraw(String amount) {
-		BigDecimal withdrawAmount = new BigDecimal(amount);
-		balance = balance.subtract(withdrawAmount);
+	public void withdraw(BigDecimal amount) {
+		balance = balance.subtract(amount);
 	}
 
-	public void deposit(String amount) {
-		BigDecimal depositAmount = new BigDecimal(amount);
-		balance = balance.add(depositAmount);
+	public void deposit(BigDecimal amount) {
+		balance = balance.add(amount);
 	}
+
 }
